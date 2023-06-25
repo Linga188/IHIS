@@ -41,7 +41,9 @@ public class IAccountMgmtServiceImpl implements IAccountMgmt{
 	@Override
 	public String deleteAccountCaseWorker(int accountId) {
 		caseWorkerRepo.deleteById(accountId);
+		System.out.println("deleted sccessfully");
 		return "Account deleted successfully";
+		
 	}
 
 	@Override
